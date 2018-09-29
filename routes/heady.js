@@ -81,7 +81,9 @@ router.put('/product/:productId', function (req, res, next) {
         product.save(function (err) {
             if (err) {
                 console.error('UNABLE TO UPDATE product!');
+                throw err;                
             }
+            res.send('Product is updated successfully!');
         });
     });
 });
@@ -89,15 +91,18 @@ router.put('/product/:productId', function (req, res, next) {
 
 /*update category*/
 router.put('/category/:categoryId', function (req, res, next) {
+    console.log(req.body);
     Category.findOne({ categoryId: req.params.categoryId }, function (err, category) {
         category.categoryName = req.body.categoryName
         category.parentCategoryId = req.body.parentCategoryId
         category.updatedAt = new Date();
 
-        product.save(function (err) {
+        category.save(function (err) {
             if (err) {
                 console.error('UNABLE TO UPDATE Category!');
+                throw err;                
             }
+            res.send('Category is updated successfully!');
         });
     });
 });
