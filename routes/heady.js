@@ -7,6 +7,13 @@ var Product = require('../models/product').Product;
 var CategorySchema = require('../models/category').CategorySchema;
 var ProductSchema = require('../models/product').ProductSchema;
 
+/** HTTP VERB USAGE 
+ * GET - SELECT record(s) 
+ * POST -INSERT record
+ * PUT - Update record
+ * DELETE -remove record
+ * **/
+
 /* create new category */
 router.post('/category', function (req, res, next) {
     var newCategory = new Category({
@@ -87,7 +94,6 @@ router.put('/product/:productId', function (req, res, next) {
         });
     });
 });
-
 
 /*update category*/
 router.put('/category/:categoryId', function (req, res, next) {
