@@ -1,0 +1,10 @@
+{
+    "database": {
+      "mongo": {
+        "host": "localhost",
+        "port": 27017,
+        "dbName": "heady",
+        "connectionString":"mongodb://localhost/heady"
+      }
+    }
+  }
