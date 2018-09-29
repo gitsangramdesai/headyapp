@@ -8,6 +8,7 @@ Postaman Collection:
         https://documenter.getpostman.com/view/836918/RWgjZhQc
 
 Mongodb Database snapshot:
+
    Categories Collection:
             { "_id" : ObjectId("5bae31543897723f17389fbf"), "parentCategoryId" : 0, "categoryId" : 1, "categoryName" : "Electronics", "createdAt" : ISODate("2018-09-28T13:49:08.604Z"), "__v" : 0 }
             { "_id" : ObjectId("5bae31743897723f17389fc0"), "parentCategoryId" : 1, "categoryId" : 2, "categoryName" : "Home Appliances", "createdAt" : ISODate("2018-09-28T13:49:40.808Z"), "__v" : 0 }
